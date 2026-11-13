@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0B1F4B">
+<title>ARAL Gain Tracker · Tutor video guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F4B;--navy2:#081538;--gold:#D4A017;--ink:#12284A;--paper:#F2F5F9;--line:#D6DDE8}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Nunito','Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:18px;line-height:1.5}
+h1,h2,h3{font-family:'Outfit','Nunito',system-ui,sans-serif;margin:0;line-height:1.15}
+a{color:inherit}:focus-visible{outline:4px solid var(--gold);outline-offset:3px}
+.top{background:var(--navy2);border-bottom:4px solid var(--gold);color:#fff}.top .in{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-family:'Outfit',sans-serif;font-weight:800;letter-spacing:3px;font-size:22px}.brand b{color:var(--gold)}.top small{color:#c9d6f2;font-weight:700}
+.hero{background:radial-gradient(900px 400px at 85% 0,#17408f 0,var(--navy) 60%,var(--navy2) 100%);color:#fff}.hero .in{max-width:1180px;margin:0 auto;padding:40px 20px 46px;display:grid;gap:28px;grid-template-columns:1.1fr 1fr}
+.kick{color:var(--gold);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:14px}.hero h1{font-size:clamp(32px,5vw,54px);margin-top:8px}.hero p{color:#d6e0f7;margin:14px 0 0;font-size:20px}
+.how{background:rgba(255,255,255,.08);border:2px solid rgba(212,160,23,.7);border-radius:20px;padding:22px 24px}.how h2{font-size:24px;color:var(--gold)}.how ol{margin:12px 0 0;padding-left:24px}.how li{margin:8px 0;font-weight:700}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;min-height:50px;padding:10px 20px;border-radius:14px;border:2px solid var(--gold);background:var(--gold);color:var(--navy);font-weight:800;text-decoration:none;cursor:pointer;font-size:17px;font-family:inherit}
+.btn.alt{background:transparent;color:#fff}.btn:active{transform:translateY(1px)}
+main{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+#stage{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;margin-bottom:34px;box-shadow:0 6px 24px rgba(11,31,75,.08)}
+#stage h2{font-size:26px;margin:2px 0 12px}.vwrap{position:relative;background:#000;border-radius:14px;overflow:hidden;aspect-ratio:16/9}video{width:100%;height:100%;display:block;background:#000}
+.srow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-top:14px}.srow .btn{border-color:var(--navy);background:var(--navy);color:#fff}.srow .btn.alt{background:#fff;color:var(--navy)}.hint{color:#46587A;font-size:16px;margin:10px 0 0}
+.sec{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px}.sec h2{font-size:28px}.sec span{color:#46587A;font-weight:700}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.card{background:#fff;border:2px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0;cursor:pointer;font:inherit;color:inherit}.card:hover{border-color:var(--gold)}.card.on{border-color:var(--navy);box-shadow:0 0 0 3px var(--gold)}
+.card .ph{position:relative;aspect-ratio:16/9;background:var(--navy)}.card img{width:100%;height:100%;object-fit:cover;display:block}.card .go{position:absolute;right:12px;bottom:12px;background:var(--gold);color:var(--navy);font-weight:800;border-radius:30px;padding:6px 16px;font-size:15px}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px}.card .n{color:#7a5600;font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase;display:flex;justify-content:space-between}.card h3{font-size:21px}.card ul{margin:4px 0 0;padding-left:18px;color:#46587A;font-size:15px}
+.seen{color:#2D8A55}
+footer{background:var(--navy2);color:#aebdde;text-align:center;padding:22px 20px;font-size:15px}footer b{color:var(--gold)}
+@media (max-width:820px){.hero .in{grid-template-columns:1fr}body{font-size:17px}}
+</style></head><body>
+<header class="top"><div class="in"><span class="brand">PROJECT <b>KABULIG</b></span><small>ARAL Gain Tracker &middot; Tutor video guide</small></div></header>
+<section class="hero"><div class="in"><div><div class="kick">For external ARAL tutors</div><h1>How to use the ARAL Gain Tracker</h1><p>10 short videos, one topic each, with an English voice and captions. About 17 minutes in all.</p>
+<div class="btns"><a class="btn" href="https://projectkabulig-dev.github.io/externaltutors/" target="_blank" rel="noopener">Open the ARAL Gain Tracker</a><a class="btn alt" href="https://tinyurl.com/2026aralexternaltutorsv1" target="_blank" rel="noopener">Open the ARAL Tutor Engagement App</a></div></div>
+<div class="how"><h2>How to use this page</h2><ol><li>Pick a topic below. Start with Topic 1, then go in order.</li><li>Watch on a phone, a laptop, or a TV. On a TV, open this page in its browser, or cast it from your phone.</li><li>Captions are on. Use the video controls to turn them off, pause, or change the speed.</li><li>Each topic is short. Come back to any topic whenever you need it.</li></ol></div></div></section>
+<main>
+<section id="stage" aria-live="polite"><h2 id="st">Choose a topic to start</h2><div class="vwrap"><video id="v" controls playsinline preload="none" poster="media/topic01.jpg"><track id="trk" kind="captions" srclang="en" label="English" default></video></div>
+<div class="srow"><span class="hint" id="sh">Tap a topic card below to play it here.</span><span><button class="btn alt" id="prev" hidden>&larr; Previous topic</button> <button class="btn" id="next" hidden>Next topic &rarr;</button></span></div></section>
+<div class="sec"><h2>Topics</h2><span id="cnt"></span></div>
+<div class="grid" id="grid"></div></main>
+<footer>Project KABULIG &middot; <b>Developed by Sir Dyon</b><br>Schools Division Office of Romblon &middot; Curriculum Implementation Division</footer>
+<script>
+const T=[{"n": 1, "title": "Welcome to the ARAL Gain Tracker", "sec": 117, "intro": ["What the app is for", "How your work flows through the app", "What to keep in mind"]}, {"n": 2, "title": "Register and sign in", "sec": 111, "intro": ["Register once with your district, name and school", "Write down your tutor code and PIN", "Sign in later, or recover a forgotten code"]}, {"n": 3, "title": "Add and manage your learners", "sec": 77, "intro": ["Add learners one by one, or paste a list", "Choose the right grade", "Edit or remove a learner"]}, {"n": 4, "title": "Numeracy pretest", "sec": 119, "intro": ["Open the pretest list", "Three ways to give the test", "Score the test and save the result"]}, {"n": 5, "title": "Reading pretest", "sec": 117, "intro": ["Choose the language", "The tool is set by the grade: Check-in or Passage", "Score and save"]}, {"n": 6, "title": "Understand the results and where to start", "sec": 59, "intro": ["Read a learner's results", "Where to start: ARAL worksheets", "Basic or Plus for reading"]}, {"n": 7, "title": "Daily record: math worksheets", "sec": 104, "intro": ["Open the Today tab", "Record the worksheet, partly correct and wrong items", "Absent learners and the group log"]}, {"n": 8, "title": "Daily record: reading", "sec": 91, "intro": ["Choose the key stage and the program", "Week, session and a mark", "Optional scores and the Progress Check-in"]}, {"n": 9, "title": "Posttest and your report", "sec": 89, "intro": ["Switch to Posttest", "Same level, tool and language as the pretest", "Read, download and print your report"]}, {"n": 10, "title": "Send your data, work offline, and sign out", "sec": 107, "intro": ["See if your work is sent", "What to do when there is no signal", "Sign out safely"]}];let cur=0;const $=s=>document.querySelector(s);
+const seenGet=()=>{try{return JSON.parse(localStorage.getItem('aral-videos-seen')||'[]')}catch(e){return[]}};const seenAdd=n=>{try{const s=new Set(seenGet());s.add(n);localStorage.setItem('aral-videos-seen',JSON.stringify([...s]))}catch(e){}};
+const pad=n=>String(n).padStart(2,'0');const mmss=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+function card(t){const b=document.createElement('button');b.className='card';b.type='button';b.id='card'+t.n;b.setAttribute('aria-label','Play topic '+t.n+': '+t.title);
+ b.innerHTML='<span class="ph"><img src="media/topic'+pad(t.n)+'.jpg" alt="" loading="lazy"><span class="go">&#9654; Play '+mmss(t.sec)+'</span></span><span class="bd"><span class="n"><span>Topic '+t.n+'</span><span class="seen" id="seen'+t.n+'"></span></span><h3></h3><ul></ul></span>';
+ b.querySelector('h3').textContent=t.title;t.intro.forEach(x=>{const li=document.createElement('li');li.textContent=x;b.querySelector('ul').append(li)});b.onclick=()=>play(t.n,true);return b}
+function marks(){const s=seenGet();T.forEach(t=>{const e=$('#seen'+t.n);if(e)e.textContent=s.includes(t.n)?'\u2713 watched':''});$('#cnt').textContent=s.length+' of '+T.length+' watched'}
+function play(n,go){cur=n;const t=T[n-1],v=$('#v');v.pause();v.poster='media/topic'+pad(n)+'.jpg';v.src='media/topic'+pad(n)+'.mp4';$('#trk').src='media/topic'+pad(n)+'.vtt';v.load();
+ $('#st').textContent='Topic '+n+': '+t.title;$('#sh').textContent='Video '+n+' of '+T.length+' \u00B7 '+mmss(t.sec);$('#prev').hidden=n<=1;$('#next').hidden=n>=T.length;
+ document.querySelectorAll('.card').forEach(c=>c.classList.toggle('on',c.id==='card'+n));if(go){$('#stage').scrollIntoView({behavior:'smooth',block:'start'});v.play().catch(()=>{})}}
+$('#v').addEventListener('ended',()=>{seenAdd(cur);marks()});$('#v').addEventListener('play',()=>{const tr=$('#v').textTracks;for(const x of tr)x.mode='showing'});
+$('#prev').onclick=()=>play(cur-1,true);$('#next').onclick=()=>play(cur+1,true);
+const g=$('#grid');T.forEach(t=>g.append(card(t)));marks();
+</script></body></html>
